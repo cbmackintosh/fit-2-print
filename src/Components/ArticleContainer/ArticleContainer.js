@@ -5,7 +5,7 @@ function ArticleContainer(props) {
 
   const stories = props.stories.map(story => {
     return (
-      <ArticleThumbnail article={story} key={story.uri} />
+      <ArticleThumbnail article={story} viewArticle={props.viewArticle} key={story.uri} />
     )
   })
 
