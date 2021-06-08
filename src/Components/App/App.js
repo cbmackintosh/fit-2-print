@@ -17,10 +17,9 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <main className='App'>
-        <h1>Fit-2-Print</h1>
+        <h1>📰 Fit-2-Print</h1>
         <ArticleContainer stories={this.state.stories} />
       </main>
     )

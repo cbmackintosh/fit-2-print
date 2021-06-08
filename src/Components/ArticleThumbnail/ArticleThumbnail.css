@@ -1,0 +1,12 @@
+.article-thumbnail {
+  /* width: 100%; */
+  display: flex;
+  border-bottom: 1px solid black;
+  text-align: left;
+  margin: 5%;
+}
+
+.article-thumbnail > img {
+  width: 40%;
+  margin-bottom: 2%;
+}
