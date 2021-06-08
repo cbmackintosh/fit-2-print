@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { getStories } from '../../API-Calls'
 import './App.css';
 
 export default class App extends Component {
@@ -9,7 +10,13 @@ export default class App extends Component {
     }
   }
 
+  componentDidMount() {
+    getStories('home')
+    .then(data => this.setState({ topStories: data.results }))
+  }
+
   render() {
+    console.log(this.state)
     return (
       <h1>Fit-2-Print</h1>
     )
