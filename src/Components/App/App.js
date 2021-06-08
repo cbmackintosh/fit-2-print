@@ -1,11 +1,17 @@
+import React, { Component } from 'react'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Fit-2-Print</h1>
-    </div>
-  );
-}
+export default class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      topStories: []
+    }
+  }
 
-export default App;
+  render() {
+    return (
+      <h1>Fit-2-Print</h1>
+    )
+  }
+}
