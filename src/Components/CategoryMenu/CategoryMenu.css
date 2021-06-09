@@ -1,0 +1,18 @@
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-buttons > a {
+  margin: 5px;
+}
+
+.cat-header {
+  background-color: darkslategray;
+  color: white;
+  margin: 0;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  opacity: 95%;
+  width: 100%;
+}

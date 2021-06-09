@@ -4,8 +4,6 @@ import { compareDates } from '../../helper-functions'
 
 function ArticleDetails(props) {
 
-  console.log(props)
-
   const compileTags = () => {
     return props.article.des_facet.map(tag => {
       if (tag.length < 20) {
