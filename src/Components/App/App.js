@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import ArticleDetails from '../ArticleDetails/ArticleDetails'
 import { getStories } from '../../API-Calls'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom'
 import './App.css';
 
 export default class App extends Component {
@@ -19,10 +19,10 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state)
+    console.log(new Date().getDay())
     return (
       <main className="App">
-        <h1>📰 Fit-2-Print</h1>
+        <Link to='/'><h1 className='site-header'>📰 Fit-2-Print</h1></Link>
         <Switch>
           <Route 
             exact path='/' 
