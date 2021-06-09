@@ -1,0 +1,10 @@
+.site-header {
+  background-color: darkslategray;
+  color: white;
+  margin: 0;
+  padding-left: 5%;
+  opacity: 95%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}

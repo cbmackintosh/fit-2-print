@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleThumbnail from '../ArticleThumbnail/ArticleThumbnail'
+import './ArticleContainer.css'
 
 function ArticleContainer(props) {
 
@@ -11,6 +12,13 @@ function ArticleContainer(props) {
 
   return (
     <div>
+      <div className='site-header'>
+        <h1>{props.category === 'home' ? 'TOP STORIES' : props.category.toUpperCase()}</h1>
+      </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       {stories}
     </div>
   )

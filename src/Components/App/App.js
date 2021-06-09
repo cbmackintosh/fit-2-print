@@ -3,7 +3,7 @@ import ArticleContainer from '../ArticleContainer/ArticleContainer'
 import ArticleDetails from '../ArticleDetails/ArticleDetails'
 import CategoryMenu from '../CategoryMenu/CategoryMenu'
 import { getStories } from '../../API-Calls'
-import { Switch, Route, Link, NavLink } from 'react-router-dom'
+import { Switch, Route, NavLink } from 'react-router-dom'
 import './App.css';
 
 export default class App extends Component {
@@ -11,6 +11,7 @@ export default class App extends Component {
     super()
     this.state = {
       stories: [],
+      selectedCategory: 'home'
     }
   }
 
@@ -21,18 +22,17 @@ export default class App extends Component {
 
   changeCategory = (cat) => {
     getStories(cat)
-    .then(data => this.setState({ stories: data.results }))
+    .then(data => this.setState({ stories: data.results, selectedCategory: cat }))
   }
 
   render() {
-    console.log(this.state)
+        
     return (
       <main className="App">
-        <Link to='/'><h1 className='site-header'>📰 Fit-2-Print</h1></Link>
         <Switch>
           <Route 
             exact path='/' 
-            render={() => <ArticleContainer stories={this.state.stories} /> } 
+            render={() => <ArticleContainer stories={this.state.stories} category={this.state.selectedCategory} /> } 
           />
           <Route
             path='/categories'
