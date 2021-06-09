@@ -1,0 +1,8 @@
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category-buttons > a {
+  margin: 5px;
+}

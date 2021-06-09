@@ -1,5 +1,6 @@
 .article-thumbnail {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   border-bottom: 1px solid black;
   text-align: left;
@@ -10,4 +11,13 @@
   width: 30%;
   height: 30%;
   margin-bottom: 2%;
+}
+
+.top-thumbnail {
+  margin: 5%;
+  border-bottom: 1px solid black;
+}
+
+.top-thumbnail > img {
+  width: 100%;
 }

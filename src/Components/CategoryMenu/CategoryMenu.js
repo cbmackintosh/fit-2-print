@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './CategoryMenu.css'
 
 function CategoryMenu(props) {
 
@@ -8,7 +9,7 @@ function CategoryMenu(props) {
   }
 
   return (
-    <div>
+    <div className='category-buttons'>
       <Link to='/'><button value='arts' onClick={e => handleChange(e)}>Arts</button></Link>
       <Link to='/'><button value='automobiles' onClick={e => handleChange(e)}>Automobiles</button></Link>
       <Link to='/'><button value='books' onClick={e => handleChange(e)}>Books</button></Link>
