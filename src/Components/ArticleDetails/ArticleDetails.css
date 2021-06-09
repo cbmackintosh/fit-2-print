@@ -1,0 +1,25 @@
+.article-details {
+  text-align: left;
+  margin: 5%;
+}
+
+.article-details > figure {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  font-size: smaller;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.tag-container {
+  margin-top: 5%;
+}
+
+.article-tag {
+  color: blue;
+  font-weight: bold;
+  display:inline;
+}
