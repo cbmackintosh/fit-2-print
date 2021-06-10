@@ -11,9 +11,9 @@ function CategoryMenu(props) {
 
   const categoryButtons = newsCategories.map(category => {
     return (
-      <Link to='/' key={Object.keys(category)[0]}>
-        <button value={Object.keys(category)[0]} onClick={e => handleChange(e)}>
-          {Object.values(category)[0]}
+      <Link to='/' key={category.code}>
+        <button value={category.code} onClick={e => handleChange(e)}>
+          {category.proper}
         </button>
       </Link>
     )
