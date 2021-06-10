@@ -10,3 +10,31 @@ export const compareDates = (now, articleDate) => {
     return week[articleDate.getDay()]
   }
 }
+
+export const newsCategories = [
+  {'arts': 'Arts'},
+  {'automobiles': 'Automobiles'},
+  {'books': 'Books'},
+  {'business': 'Business'},
+  {'fahsion': 'Fashion'},
+  {'food': 'Food'},
+  {'health': 'Health'},
+  {'insider': 'Insider'},
+  {'magazine': 'Magazine'},
+  {'movies': 'Movies'},
+  {'nyregion': 'New York Region'},
+  {'obituaries': 'Obituaries'},
+  {'opinion': 'Opinion'},
+  {'politics': 'Politics'},
+  {'realestate': 'Real Estate'},
+  {'science': 'Science'},
+  {'sports': 'Sports'},
+  {'sundayreview': 'Sunday Review'},
+  {'technology': 'Technology'},
+  {'theater': 'Theater'},
+  {'t-magazine': 'T-Magazine'},
+  {'travel': 'Travel'},
+  {'upshot': 'Upshot'},
+  {'us': 'U.S.'},
+  {'world': 'World'}
+];
