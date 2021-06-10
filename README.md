@@ -4,11 +4,21 @@ By Cameron Mackintosh
 
 A simple news app consuming the NYT API
 
-## Design inspiration: The Associated Press news app
+## Fit-2-Print screenshots:
 
 <figure>
   <img src="https://user-images.githubusercontent.com/72054706/121570231-ec575080-c9de-11eb-98a7-a5c01cf5e11a.png">
   <figcaption align="center">HOME</figcaption>
+</figure>
+
+<figure>
+  <img src="https://user-images.githubusercontent.com/72054706/121570723-5d970380-c9df-11eb-81a3-81d90cff0e23.png">
+  <figcaption align="center">ARTICLE DETAILS</figcaption>
+</figure>
+
+<figure>
+  <img src="https://user-images.githubusercontent.com/72054706/121570808-769fb480-c9df-11eb-8bb1-2e847beaf9c0.png">
+  <figcaption align="center">CATEGORY MENU</figcaption>
 </figure>
 
 
