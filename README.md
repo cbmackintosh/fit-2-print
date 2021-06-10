@@ -7,7 +7,7 @@
 
 Fit-2-Print is a simple news app that consumes the [New York Times Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). The app displays a list of the top 55-60 stories currently on the New York Times homepage. Users can click/tap on an article thumbnail to view more details on that article, including image caption, publication time, author, summary text, content tags and a button linking to the full story on the New York Times site. From the Categories menu, users can select a specific news category to view a list of stories/articles only under that category.
 
-This project was a requirement for my final quarter as a frontend engineering student at the Turing School of Software and Design. The goal of the assignment was to simulate a take-home technical challenge that students might encounter during the job search. We were given the NYT API along with a set of open ended instructions and asked to create a simple application. Total suggested work time on this project was 6 hours.
+This project was a requirement for my final quarter as a frontend engineering student at the Turing School of Software and Design. The goal of the assignment was to simulate a take-home technical challenge that students might encounter during the job search. We were given the NYT API along with a set of open ended instructions and asked to create a simple application. Total suggested work time on this project was 6 hours. <a href="https://github.com/turingschool-examples/mod4-tech-challenges/blob/main/take-homes/fe-take-home.md">More info can be found here</a>
 
 One of my goals for this application was to focus on mobile design first in order to facilitate responsiveness at later stages of development. In my experience, starting with a desktop view and then trying to squeeze everything together later on produces innumerable design complications.
 
@@ -21,4 +21,12 @@ One of my goals for this application was to focus on mobile design first in orde
 
 ## INSTALLATION INSTRUCTIONS
 
+* Clone this repository with `git clone git@github.com:cbmackintosh/fit-2-print.git`
+* `cd fit-2-print` into the directory
+* Run `npm install`
+* Run `npm start` to run the application locally
+
 ## TECHNOLOGIES USED
+
+* JavaScript / React
+* React Router
