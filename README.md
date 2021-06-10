@@ -8,7 +8,7 @@ A simple news app consuming the NYT API
 
 <figure>
   <img src="https://user-images.githubusercontent.com/72054706/121570231-ec575080-c9de-11eb-98a7-a5c01cf5e11a.png">
-  <figcaption>HOME</figcaption>
+  <figcaption align-text="center">HOME</figcaption>
 </figure>
 
 
