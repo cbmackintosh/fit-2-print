@@ -1,8 +1,15 @@
 # Fit-2-Print
 
-By Cameron Mackintosh
+<img src="https://img.shields.io/badge/LinkedIn-cameron--mackintosh-informational?style=for-the-badge&labelColor=black&logo=linkedin&logoColor=0077b5&&color=0FBBD6"/>
+<img src="https://img.shields.io/badge/Github-cbmackintosh-informational?style=for-the-badge&labelColor=black&logo=github&color=8B0BD5"/>
 
 ## ASTRACT:
+
+Fit-2-Print is a simple news app that consumes the [New York Times Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview). The app displays a list of the top 55-60 stories currently on the New York Times homepage. Users can click/tap on an article thumbnail to view more details on that article, including image caption, publication time, author, summary text, content tags and a button linking to the full story on the New York Times site. From the Categories menu, users can select a specific news category to view a list of stories/articles only under that category.
+
+This project was a requirement for my final quarter as a frontend engineering student at the Turing School of Software and Design. The goal of the assignment was to simulate a take-home technical challenge that students might encounter during the job search. We were given the NYT API along with a set of open ended instructions and asked to create a simple application. Total suggested work time on this project was 6 hours.
+
+One of my goals for this application was to focus on mobile design first in order to facilitate responsiveness at later stages of development. In my experience, starting with a desktop view and then trying to squeeze everything together later on produces innumerable design complications.
 
 ## SCREENSHOTS:
 
