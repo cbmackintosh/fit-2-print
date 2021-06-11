@@ -1,6 +1,7 @@
 import React from 'react'
 import ArticleThumbnail from '../ArticleThumbnail/ArticleThumbnail'
 import './ArticleContainer.css'
+import { newsCategories } from '../../helper-functions'
 
 function ArticleContainer(props) {
 
@@ -11,9 +12,9 @@ function ArticleContainer(props) {
   })
 
   return (
-    <div>
+    <div className='article-container'>
       <div className='site-header'>
-        <h1>{props.category === 'home' ? 'TOP STORIES' : props.category.toUpperCase()}</h1>
+        <h1>{props.category === 'home' ? 'TOP STORIES' : newsCategories.find(category => category.code === props.category).proper.toUpperCase()}</h1>
       </div>
       <br></br>
       <br></br>
