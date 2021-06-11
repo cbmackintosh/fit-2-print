@@ -34,3 +34,7 @@ One of my goals for this application was to focus on mobile design first in orde
 * ![Cypress](https://img.shields.io/badge/cypress-04C38E.svg?&style=for-the-badge&logo=cypress&logoColor=white)
 
 ## TESTING INSTRUCTIONS
+
+* Clone down this repo, cd into the directory and then install Cypress with `npm install cypress`
+* The tests can be run from the command line using `npm run cy:run`
+* Alternatively, you can run `npx cypress open` to access the test suite through the Cypress UI.
