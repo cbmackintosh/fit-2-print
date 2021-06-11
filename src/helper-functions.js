@@ -1,8 +1,12 @@
 export const compareDates = (now, articleDate) => {
-  if (now.getDate() === articleDate.getDate() && now.getHours() === articleDate.getHours()) {
-    return `${now.getMinutes() - articleDate.getMinutes()} minutes ago`
-  } else if (now.getDate() === articleDate.getDate()) {
-    return `${now.getHours() - articleDate.getHours()} hours ago`
+  if (now.getDate() === articleDate.getDate() && now.getHours() === articleDate.getHours() && now.getMinutes() === articleDate.getMinutes()) {
+    return 'Now'
+  } else if (now.getDate() === articleDate.getDate() && now.getHours() === articleDate.getHours()) {
+    return `${now.getMinutes() - articleDate.getMinutes()} minute${now.getMinutes() - articleDate.getMinutes() > 1 ? 's' : ''} ago`
+  } else if (now.getDate() === articleDate.getDate() && now.getHours() - articleDate.getHours() < 12) {
+    return `${now.getHours() - articleDate.getHours()} hour${now.getHours() - articleDate.getHours() > 1 ? 's' : ''} ago`
+  } else if (now.getDate() === articleDate.getDate() && now.getHours() - articleDate.getHours() > 12) {
+    return 'Today'
   } else if (now.getDate() - articleDate.getDate() === 1) {
     return "Yesterday"
   } else {
