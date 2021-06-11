@@ -1,6 +1,7 @@
 import React from 'react'
 import './ArticleDetails.css'
 import { compareDates } from '../../helper-functions'
+import { Link } from 'react-router-dom'
 
 function ArticleDetails(props) {
 
@@ -20,6 +21,7 @@ function ArticleDetails(props) {
     return (
       <div className='article-details'>
         <figure>
+          <Link to='/' className='return-button'><button>⬅</button></Link>
           <img className="article-image" src={props.article.multimedia[0].url} alt={props.article.multimedia[0].caption} />
           <figcaption>{props.article.multimedia[0].caption}</figcaption>
         </figure>
