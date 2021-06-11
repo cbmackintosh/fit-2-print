@@ -10,7 +10,7 @@ function ArticleThumbnail(props) {
   return (
     <Link to={path}>
       <div className={props.isFirst ? 'top-thumbnail' : 'article-thumbnail'}>
-        <img src={props.article.multimedia[0].url} alt={props.article.multimedia[0].caption} />
+        {props.article.multimedia && <img src={props.article.multimedia[0].url} alt={props.article.multimedia[0].caption} />}
         <div className='thumbnail-text'>
           <h3>{props.article.title}</h3>
           <p>{compareDates(new Date(), new Date(props.article.updated_date))}</p>

@@ -22,8 +22,8 @@ function ArticleDetails(props) {
       <div className='article-details'>
         <figure>
           <Link to='/' className='return-button'><button>⬅</button></Link>
-          <img className="article-image" src={props.article.multimedia[0].url} alt={props.article.multimedia[0].caption} />
-          <figcaption>{props.article.multimedia[0].caption}</figcaption>
+          {props.article.multimedia && <img className="article-image" src={props.article.multimedia[0].url} alt={props.article.multimedia[0].caption} />}
+          {props.article.multimedia && <figcaption>{props.article.multimedia[0].caption}</figcaption>}
         </figure>
         <div className='tag-container'>
           {compileTags()}
